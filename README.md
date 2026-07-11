@@ -1,16 +1,58 @@
-# React + Vite
+# Garagezka Workspace
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository is set up as a monorepo workspace containing separate **Frontend** and **Backend** directories.
 
-Currently, two official plugins are available:
+## Repository Structure
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```
+garagezka/
+├── backend/            # Express.js backend (API server)
+└── frontend/           # React + Vite frontend
+```
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Getting Started
 
-## Expanding the ESLint configuration
+### Prerequisites
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Node.js (version 18 or above recommended)
+- npm (version 9 or above recommended)
+
+### Installation
+
+To install dependencies for all workspaces at once:
+
+```bash
+npm install
+```
+
+---
+
+## Running the Applications
+
+You can run individual workspaces from the root folder:
+
+### Development Mode
+
+- **Frontend Development Server**:
+  ```bash
+  npm run frontend:dev
+  ```
+
+- **Backend Development Server**:
+  ```bash
+  npm run backend:dev
+  ```
+
+### Production Mode
+
+- **Build Frontend**:
+  ```bash
+  npm run frontend:build
+  ```
+
+- **Start Backend (Production)**:
+  ```bash
+  npm run backend:start
+  ```
